@@ -1,0 +1,12 @@
+npx aws-api-gateway-cli-test \
+--username='sonnel.moreau1@frontier.com' \
+--password='Th1s1s@t3st' \
+--user-pool-id='us-east-1_6XcMndhWa' \
+--app-client-id='6bk986e0maco5ik9ebvv3si2uf' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:127b7c9a-8ed7-4c1c-a38c-f1983d2771bf' \
+--invoke-url='https://mj8vgahyh3.execute-api.us-east-1.amazonaws.com/prod' \
+--api-gateway-region='us-east-1' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'

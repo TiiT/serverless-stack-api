@@ -9,7 +9,7 @@ export async function main(event, context){
 	const params = {
 		TableName: process.env.tableName,
 		Item: {
-			userId: "123",
+			userId: event.requestContext.identity.cognitoIdentityId,
 			noteId: uuid.v1(),
 			content: data.attachment,
 			createdAt:Date.now(),
